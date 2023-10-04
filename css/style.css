@@ -5,18 +5,32 @@
 }
 img{
     max-width: 100%;
+    border-radius: 50%;
 }
 /* common */
 .flex{
     display: flex;
 }
+
 .space-between{
     justify-content: space-between;
 }
 header{
     height: 80px;
     background-color: hsl(0deg 0% 91.76%);
+    align-items: center;
 }
+.continer-icon{
+    gap: 1rem;
+    padding-right: 1rem;
+}
+.name-continer{
+    align-self: center;
+}
+.mg-bot1{
+    margin-bottom: .3rem;
+}
+
 .wrap{
     height: 100vh;
     background-color: aquamarine;
@@ -33,6 +47,12 @@ header{
     height: 100%;
     background-color: lightgreen;
 }
+.profile {
+   padding: 0 1rem;
+}
+.profile img{
+    height: 60px;
+}
 
 
 /* chat parte destra */
@@ -42,7 +62,17 @@ header{
     height: 100%;
 }
 .michele-chat ,.menu{
-    height: 80px;
     min-width: 200px;
-    background-color: blue;
+    background-color: lime;
+    
 }
+
+/* responsive header */
+@media screen and (max-width:768px) {
+    .icon-left{
+        display: none;
+    }
+    
+    
+}
+    

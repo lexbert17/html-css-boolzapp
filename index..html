@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <div class="wrap flex">
         <div class="biggest-container flex">
             <!-- parte sinistra -->
             <div class="messaggi">
-                <header class="flex space-between">
-                    <div class="profile">
-                        <img src="img/avatar_io.jpg" alt="">
+                <header class="flex space-between ">
+                    <div class="profile padding-left">
+                        <img src="img/avatar_io.jpg" alt="img">
+                    </div>
+                    <!-- opzioni lato destro -->
+                    <div class="flex continer-icon icon-left">
+                        <div><i class="fa-solid fa-circle-notch fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></div>
+                        <div><i class="fa-solid fa-message fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical fa-xl" style="color: hsl(0deg 0% 69.41%);"></i></div>
                     </div>
                 </header>
             </div>
@@ -23,10 +29,22 @@
             <div class="chat">
                 <header  class="flex space-between">
                     <!-- chat di michele -->
-                    <div class="michele-chat"></div>
+                    <div class="michele-chat padding-left flex">
+                        <div class="profile padding-left">
+                            <img src="img/avatar_1.jpg" alt="img">
+                        </div>
+                        <div class="name-continer">
+                            <h4 class="mg-bot1">MICHELE</h4>
+                            <span>Ultimo accesso oggi alle 16.26</span>
+                        </div>
+                    </div>
 
                     <!-- opzioni parte destra  -->
-                    <div class="menu"></div>
+                    <div class="flex continer-icon">
+                        <div><i class="fa-solid fa-magnifying-glass fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></div>
+                        <div><i class="fa-solid fa-paperclip fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></div>
+                    </div>
                 </header>
             </div>
         </div>
