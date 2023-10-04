@@ -6,3 +6,43 @@
 img{
     max-width: 100%;
 }
+/* common */
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+header{
+    height: 80px;
+    background-color: hsl(0deg 0% 91.76%);
+}
+.wrap{
+    height: 100vh;
+    background-color: aquamarine;
+    justify-content: center;    
+}
+.biggest-container{
+    width: 80%;
+    margin: 1rem 0;
+    border: 2px solid black;   
+}  
+/* parte sinistra */
+.messaggi{
+    width: 35%;
+    height: 100%;
+    background-color: lightgreen;
+}
+
+
+/* chat parte destra */
+.chat{
+    width: calc(100% - 35%);
+    background-image: url(../img/mine.jpg);
+    height: 100%;
+}
+.michele-chat ,.menu{
+    height: 80px;
+    min-width: 200px;
+    background-color: blue;
+}
