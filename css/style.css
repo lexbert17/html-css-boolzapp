@@ -20,11 +20,11 @@ header{
     background-color: hsl(0deg 0% 91.76%);
     align-items: center;
 }
-.continer-icon{
+.container-icon{
     gap: 1rem;
     padding-right: 1rem;
 }
-.name-continer{
+.name-container{
     align-self: center;
 }
 .mg-bot1{
@@ -51,10 +51,43 @@ header{
    padding: 0 1rem;
 }
 .profile img{
-    height: 60px;
+    height: 4rem;
 }
 
+/* parte sinistra main  */
 
+/*  notifica  */
+#bell{
+ font-size: 1rem;
+ background-color: white;
+ padding: 20px 15px;
+ border-radius: 50%;
+}
+.notifications{
+    background-color:hsl(198.55deg 94.83% 77.25%);
+    align-items: center;
+    padding: 2rem 0;
+}
+.name-container a{
+    color: gray;
+}
+
+/* ricerca */
+input[type=text]{
+    width: 100%;
+    border: none;
+}
+.search-container{
+    background-color:hsl(0deg 0% 91.76%);
+
+}
+#search{
+    padding: .8rem;
+    background-color: white;
+}
+.wrap-search{
+    padding: .5rem;
+}
 /* chat parte destra */
 .chat{
     width: calc(100% - 35%);
