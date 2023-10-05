@@ -1,1 +1,74 @@
+/* break point header */
+
+@media screen and (max-width:749px) {
+    .messages .container-icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width:504px){ 
+    .messages, .container-icon{
+         display: none;
+    }
+    .biggest-container .chat{
+        width: 100%;
+    }  
+    header .container-icon{
+        display: none;
+    }
+}
+
+/* break point main left  */
+@media screen and (max-width:749px) {
+    
+    main .list-container{
+        height: calc(95vh - 82px);
+    }
+    .biggest-container .messages{
+        width: 18%;
+    }
+    .biggest-container .chat{
+        width: calc(100% - 18%);
+    }
+    .messages .name-container, .sent, .search-container, main .notifications{
+        display: none;
+    }
+    header , ul{
+        min-width: 100px;
+    }
+   
+    ul .profile{
+        min-width: 100px;
+
+    }
+}
+
+/* break-point main right  */
+@media screen and (max-width:749px) {
+    .message:nth-child(even){
+        margin-left: 1.5rem;
+    }
+    .message:nth-child(odd){
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (max-width:504px){
+    .message:first-child{
+        margin-top: 2rem;       
+    }
+    .di{
+        width: 100%;
+    } 
+ }
+
+ /* responsive footer  */
+@media screen and (max-width:504px){
+    footer button{
+        display: none;
+    }
+    footer input[type=text]{
+        margin: 0 1rem;
+    }
+}
 

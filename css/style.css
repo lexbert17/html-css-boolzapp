@@ -112,7 +112,7 @@ ul{
 }
 .list-container{
     overflow-y: auto;
-    height: calc(95vh - 84px - 10rem );
+    height: calc(95vh - 80px - 10rem );
     display: block;
 }
 .list-container span, .sent{
@@ -146,31 +146,42 @@ ul{
     height: calc(95vh - 82px - 82px);
     justify-content: start;
     flex-direction: column;
-}
-.green-text{
-    max-width: 60%;
+    overflow-y: scroll;
 }
 .message:first-child{
     margin-top: 3rem;
 }
 .message:nth-child(odd){
     align-self: flex-end;
-    margin-right: 3rem;
+    margin-right: 4rem;
     background-color: hsl(94.29deg 84% 85.29%);
 }
 .message:nth-child(even){
     align-self: flex-start;
-    margin-left: 3rem;
+    margin-left: 4rem;
     background-color: white;
 }
 .message{
    margin-top: 1rem; 
+   border-radius: 10px;
+   max-width: 60%;  
 }
-
+.message p{
+    line-height: 1rem;
+}
+.chevron{
+    padding: 0 1rem 0 0;
+}
+.time{
+    text-align: end;
+    font-size: .6rem;
+    color: lightgray;
+    padding: 0 .2rem .2rem 0;
+}
+.align{
+    padding: 1rem 0 0 1rem;
+}
 /* parte destra footer  */
-footer *{ 
-    
-}
 footer{
     height: 80px;
     background-color: hsl(26.67deg 27.27% 93.53%);
@@ -187,53 +198,6 @@ footer input[type=text]{
     border-radius: 5px;
 }
 
-/* responsive header */
-@media screen and (max-width:749px) {
-    .icon-left, .notifications, .name-container, .search-container, .wrap-search, .sent{
-        display: none;
-    }
-    .list-container{
-        height: calc(95vh - 82px);
-    }
-    .messages{
-        width: 18%;
-    }
-    .chat{
-        width: calc(100% - 18%);
-    }
-    .chat .name-container{
-        display: block;
-    }
-    .messages header{
-        min-width: 100px;
-    }
-    .list-container ul{
-        min-width: 100px;
-    }
-    ul .profile{
-        min-width: 100px;
-
-    }
-}
- @media screen and (max-width:504px){
-    .messages, .container-icon{
-        display: none;
-    }
-    .chat{
-        width: 100%;
-    }
- }
-
-    
-/* responsive footer  */
-@media screen and (max-width:504px){
-    footer button{
-        display: none;
-    }
-    footer input[type=text]{
-        margin: 0 1rem;
-    }
-}
     
     
 
