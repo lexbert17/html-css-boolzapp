@@ -45,19 +45,19 @@
 
 /* break-point main right  */
 @media screen and (max-width:749px) {
-    .message:nth-child(even){
+    main .message:nth-child(even){
         margin-left: 1.5rem;
     }
-    .message:nth-child(odd){
+    main .message:nth-child(odd){
         margin-right: 1.5rem;
     }
 }
 
 @media screen and (max-width:504px){
-    .message:first-child{
+    main .message:first-child{
         margin-top: 2rem;       
     }
-    .di{
+    .biggest-container .chat{
         width: 100%;
     } 
  }

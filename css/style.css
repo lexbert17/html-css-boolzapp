@@ -112,11 +112,11 @@ ul{
 }
 .list-container{
     overflow-y: auto;
-    height: calc(95vh - 80px - 10rem );
+    height: calc(95vh - 88px - 10rem );
     display: block;
 }
-.list-container span, .sent{
-    color: lightgray
+.list-container span, .sent, time{
+    color: gray
 }
 .list-container li{
     border-bottom: 1px solid lightgray;
@@ -171,15 +171,31 @@ ul{
 }
 .chevron{
     padding: 0 1rem 0 0;
+    position: relative;
 }
 .time{
     text-align: end;
     font-size: .6rem;
-    color: lightgray;
     padding: 0 .2rem .2rem 0;
 }
 .align{
     padding: 1rem 0 0 1rem;
+}
+
+#info{
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    left: -8rem;
+    display: none;
+    
+}
+.chevron:hover #info{
+    display: block;
+}
+#info div{
+    padding: .5rem;
 }
 /* parte destra footer  */
 footer{
