@@ -8,10 +8,15 @@ img{
     border-radius: 50%;
 }
 /* common */
+.vertical-padding2{
+    padding: 1rem 0;
+}
 .flex{
     display: flex;
 }
-
+span{
+    font-size: .8rem;
+}
 .space-between{
     justify-content: space-between;
 }
@@ -33,19 +38,24 @@ header{
 
 .wrap{
     height: 100vh;
-    background-color: aquamarine;
+    background-color: hsl(174.21deg 94.77% 30%);
     justify-content: center;    
 }
 .biggest-container{
     width: 80%;
+    height: 50rem;
     margin: 1rem 0;
     border: 2px solid black;   
-}  
+} 
+.button{
+    border: none;
+    font-size: 1rem;
+} 
 /* parte sinistra */
-.messaggi{
+.messages{
     width: 35%;
     height: 100%;
-    background-color: lightgreen;
+    background-color: white
 }
 .profile {
    padding: 0 1rem;
@@ -67,9 +77,11 @@ header{
     background-color:hsl(198.55deg 94.83% 77.25%);
     align-items: center;
     padding: 2rem 0;
+    height: 7rem;
 }
 .name-container a{
     color: gray;
+    font-size: 1rem;
 }
 
 /* ricerca */
@@ -79,15 +91,41 @@ input[type=text]{
 }
 .search-container{
     background-color:hsl(0deg 0% 91.76%);
-
+    height: 3rem;
 }
 #search{
-    padding: .8rem;
+    padding: .5rem;
     background-color: white;
+    border: none
 }
 .wrap-search{
     padding: .5rem;
+    height: 3rem
 }
+
+/* lista */
+.column{
+    flex-direction: column;
+    
+}
+.list-container{
+    overflow-y: auto;
+    height: calc(50rem - 80px - 10rem );
+    display: block;
+}
+.list-container span, .sent{
+    color: lightgray
+}
+.list-container li{
+    border-bottom: 1px solid lightgray;
+}
+.list-container li:hover{
+    background-color: lightgray;
+}  
+.sent{
+    padding-right: 1rem;
+}
+
 /* chat parte destra */
 .chat{
     width: calc(100% - 35%);
@@ -95,17 +133,42 @@ input[type=text]{
     height: 100%;
 }
 .michele-chat ,.menu{
-    min-width: 200px;
-    background-color: lime;
-    
+    min-width: 200px;   
+}
+.chat span{
+    color: gray;
 }
 
 /* responsive header */
-@media screen and (max-width:768px) {
-    .icon-left{
+@media screen and (max-width:749px) {
+    .icon-left, .notifications, .name-container, .search-container, .wrap-search, .sent{
         display: none;
     }
-    
-    
+    .list-container{
+        height: calc(100% - 80px);
+    }
+    .messages{
+        width: 18%;
+    }
+    .chat{
+        width: calc(100% - 18%);
+    }
+    .chat .name-container{
+        display: block;
+    }
 }
+ @media screen and (max-width:504px){
+    .messages, .container-icon{
+        display: none;
+    }
+    .chat{
+        width: 100%;
+    }
+ }
+
+    
+
+    
+    
+
     
