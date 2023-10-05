@@ -43,7 +43,7 @@ header{
 }
 .biggest-container{
     width: 80%;
-    height: 50rem;
+    height: 95vh;
     margin: 1rem 0;
     border: 2px solid black;   
 } 
@@ -110,7 +110,7 @@ input[type=text]{
 }
 .list-container{
     overflow-y: auto;
-    height: calc(50rem - 80px - 10rem );
+    height: calc(95vh - 82px - 10rem );
     display: block;
 }
 .list-container span, .sent{
@@ -139,13 +139,32 @@ input[type=text]{
     color: gray;
 }
 
+/* parte destra footer  */
+footer *{ 
+    
+}
+footer{
+    height: 80px;
+    background-color: hsl(26.67deg 27.27% 93.53%);
+}    
+
+footer .button{
+    background-color: transparent;
+    margin: 0 1.5rem;
+}
+footer input[type=text]{
+    height: 60px;
+    align-self: center;
+    padding:0 1rem ;
+}
+
 /* responsive header */
 @media screen and (max-width:749px) {
     .icon-left, .notifications, .name-container, .search-container, .wrap-search, .sent{
         display: none;
     }
     .list-container{
-        height: calc(100% - 80px);
+        height: calc(95vh - 82px);
     }
     .messages{
         width: 18%;
@@ -155,6 +174,16 @@ input[type=text]{
     }
     .chat .name-container{
         display: block;
+    }
+    .messages header{
+        min-width: 100px;
+    }
+    .list-container ul{
+        min-width: 100px;
+    }
+    ul .profile{
+        min-width: 100px;
+
     }
 }
  @media screen and (max-width:504px){
