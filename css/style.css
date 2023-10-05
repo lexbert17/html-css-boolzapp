@@ -7,38 +7,52 @@ img{
     max-width: 100%;
     border-radius: 50%;
 }
-/* common */
+
+
+/* elementi in comune */
+
 .vertical-padding2{
     padding: 1rem 0;
 }
+
 .flex{
     display: flex;
 }
+
 span{
     font-size: .8rem;
 }
+
 .space-between{
     justify-content: space-between;
 }
+
 header{
     height: 80px;
     background-color: hsl(0deg 0% 91.76%);
     align-items: center;
 }
+
 .container-icon{
     gap: 1rem;
     padding-right: 1rem;
 }
+
 .name-container{
     align-self: center;
 }
+
 .mg-bot1{
     margin-bottom: .3rem;
 }
+/* / elementi in comune */
+
+
+/* sfondo */
 
 .wrap{
     height: 100vh;
-    background-color: hsl(174.21deg 94.77% 30%);
+    background-image: linear-gradient(lightseagreen 0%,lightseagreen 20%, lightgray 20%,lightgray 80% );
     justify-content: center;    
 }
 .biggest-container{
@@ -51,168 +65,209 @@ header{
     border: none;
     font-size: 1rem;
 } 
-/* parte sinistra */
+
+
+/*  contenitore parte sinistra */
+
 .messages{
     width: 35%;
     height: 100%;
     background-color: white
 }
+
 .profile {
    padding: 0 1rem;
 }
+
 .profile img{
     height: 4rem;
 }
 
 /* parte sinistra main  */
 
+
 /*  notifica  */
+
 #bell{
  font-size: 1rem;
  background-color: white;
  padding: 20px 15px;
  border-radius: 50%;
 }
+
 .notifications{
     background-color:hsl(198.55deg 94.83% 77.25%);
     align-items: center;
     padding: 2rem 0;
     height: 7rem;
 }
+
 .name-container a{
     color: gray;
     font-size: 1rem;
 }
 
+
 /* ricerca */
+
 input[type=text]{
     width: 100%;
     border: none;
 }
+
 .search-container{
     background-color:hsl(0deg 0% 91.76%);
     height: 3rem;
 }
+
 #search{
     padding: .5rem;
     background-color: white;
     border: none
 }
+
 .wrap-search{
     padding: .5rem;
     height: 3rem
 }
 
+
 /* lista */
+
 .column{
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
-ul{
-}
+
 .list-container{
     overflow-y: auto;
     height: calc(95vh - 88px - 10rem );
     display: block;
 }
+
 .list-container span, .sent, time{
     color: gray
 }
+
 .list-container li{
     border-bottom: 1px solid lightgray;
 }
+
 .list-container li:hover{
     background-color: lightgray;
 }  
+
 .sent{
     padding-right: 1rem;
 }
 
-/* chat parte destra */
+/* /main parte sinistra */
+
+
+/* contenitore parte destra */
+
 .chat{
     width: calc(100% - 35%);
     background-image: url(../img/mine.jpg);
     height: 100%;
 }
+
 .michele-chat ,.menu{
     min-width: 200px;   
 }
+
 .chat span{
     color: gray;
 }
 
+
 /* main parte destra */
+
 .main-right{
     height: calc(95vh - 82px - 82px);
     justify-content: start;
     flex-direction: column;
     overflow-y: scroll;
 }
+
 .message:first-child{
     margin-top: 3rem;
 }
+
 .message:nth-child(odd){
     align-self: flex-end;
     margin-right: 4rem;
     background-color: hsl(94.29deg 84% 85.29%);
 }
+
 .message:nth-child(even){
     align-self: flex-start;
     margin-left: 4rem;
     background-color: white;
 }
+
 .message{
    margin-top: 1rem; 
    border-radius: 10px;
    max-width: 60%;  
 }
+
 .message p{
     line-height: 1rem;
 }
+
 .chevron{
     padding: 0 1rem 0 0;
     position: relative;
 }
+
 .time{
     text-align: end;
     font-size: .6rem;
     padding: 0 .2rem .2rem 0;
 }
+
 .align{
     padding: 1rem 0 0 1rem;
 }
 
-#info{
+.info{
     background-color: white;
     text-align: center;
     width: 150px;
     position: absolute;
     left: -8rem;
-    display: none;
-    
+    display: none;    
 }
-.chevron:hover #info{
+
+.chevron:hover .info{
     display: block;
 }
-#info div{
+
+.info div{
     padding: .5rem;
 }
+
+
 /* parte destra footer  */
+
 footer{
     height: 80px;
     background-color: hsl(26.67deg 27.27% 93.53%);
-}    
+}  
 
 footer .button{
     background-color: transparent;
     margin: 0 1.5rem;
 }
+
 footer input[type=text]{
     height: 60px;
     align-self: center;
     padding:0 1rem ;
     border-radius: 5px;
 }
+
+/* contenitore parte destra */
 
     
     
