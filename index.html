@@ -18,12 +18,10 @@
                         <div class="profile padding-left flex">
                             <img src="img/avatar_io.jpg" alt="img">
                         </div>
-                        <h4 class="name-container">Sofia</h4>
+                        <h4 class="name-container">SOFIA</h4>
                     </div>
                     <!-- opzioni lato destro -->
                     <div class="flex container-icon icon-left">
-                        <button class="button"><i class="fa-solid fa-circle-notch fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></button>
-                        <button class="button"><i class="fa-solid fa-message fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></button>
                         <button class="button"><i class="fa-solid fa-ellipsis-vertical fa-xl" style="color: hsl(0deg 0% 69.41%);"></i></button>
                     </div>
                 </header>
@@ -234,7 +232,18 @@
                     <!-- scrivi un messaggio  -->
                     <input type="text" class="name" name="firstname" placeholder="Scrivi un messaggio">
                     <!-- microfono -->
-                    <button class="button" ><i class="fa-solid fa-microphone fa-xl" style="color: hsl(198deg 4.42% 44.31%);"></i></button>
+                    <div class="bonus">
+                    <button class="button" id="mic" ><i class="fa-solid fa-microphone fa-xl" ></i></button>
+                    <div class="hidden ">
+                        <div class="vertical-slide"><i class="fa-solid fa-lock fa-xl"style="color: hsl(198deg 4.42% 44.31%);"></i></div>
+                        <div class="vertical-slide"><i class="fa-solid fa-chevron-up fa-lg" style="color: hsl(198deg 4.42% 44.31%);"></i></div>
+                    </div>  
+                    <div class="slide-left ">
+                         <h5>Scorri per annullare</h5>          
+                        <div id="chevron-left" ><i class="fa-solid fa-chevron-left fa-lg" style="color: #55585e;"></i></div>
+                    </div>  
+
+                    </div>
                 </footer>
                 
             </div>

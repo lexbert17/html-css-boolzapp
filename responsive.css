@@ -70,4 +70,115 @@
     footer input[type=text]{
         margin: 0 1rem;
     }
+    .bonus *{
+        display: none;
+    }
+}   
+        
+/* Bonus microfono */
+
+.bonus:active #mic { 
+    transform: translateY(-20px);
+    color: red;
+    transform: scale(2);
+} 
+
+.bonus{
+    background-color: transparent;
+    
+}  
+.bonus:active .hidden{
+    transform: translateY(-80px);
+    display: block;
+
+}
+.vertical-slide{
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+    animation: slide-up 3s ease-in 0s reverse;
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.vertical-slide:first-child{
+    margin-bottom: 50px;
+}
+
+.bonus:active .vertical-slide{
+    display: block;  
+}
+
+.hidden{
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    display: none;
+    background-color: rgb(243, 238, 234);
+}
+
+
+.slide-left{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgb(243, 238, 234);
+    position: absolute;
+    bottom: 0px;
+    display: none;
+    justify-content: space-around;   
+}
+
+.chat .slide-left{
+    width: calc(100% - 80px);
+    transform: translateX(-100%);
+}
+
+.bonus:active .slide-left{
+    display: block;
+}
+
+h5{
+    font-size: 2rem;
+    animation: salto 1 ease-in 3s;
+}
+
+.slide-left *{
+    display: inline-block;
+    display: none;
+    animation: slide-row 3s ease-in 0s ; 
+}
+
+@keyframes slide-row{
+    0%{
+        transform: translateX(65px);
+    }
+    100%{
+        transform: translateX(0px);
+        
+    }
+}
+.bonus:active .slide-left *{
+    display: block;
+    display: inline-block;
+    
+
+}
+#chevron-left{
+    position: relative;
+    left: 100px;
+    
+}
+h5{
+    font-size: 2rem;
+    color: #55585e;
 }

@@ -253,11 +253,13 @@ input[type=text]{
 footer{
     height: 80px;
     background-color: hsl(26.67deg 27.27% 93.53%);
+    position: relative;
 }  
 
 footer .button{
     background-color: transparent;
-    margin: 0 1.5rem;
+    width: 80px;
+   
 }
 
 footer input[type=text]{
@@ -265,6 +267,16 @@ footer input[type=text]{
     align-self: center;
     padding:0 1rem ;
     border-radius: 5px;
+    
+}
+
+#mic{
+    border-radius: 50%;
+    color: hsl(198deg 4.42% 44.31%);
+    align-self: center;
+    height: 80px;
+    
+    
 }
 
 /* contenitore parte destra */
